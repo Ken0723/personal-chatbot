@@ -1,0 +1,66 @@
+{
+  "en": {
+    "basic_info": {
+      "name": "Ken",
+      "role": "Programmer / Software Engineer",
+      "location": "Hong Kong",
+      "languages": ["Cantonese", "English", "Mandarin"]
+    },
+    "professional": {
+      "current_focus": "Building AI-powered applications",
+      "skills": {
+        "frontend": ["React"],
+        "backend": ["Python", "PHP", "FastAPI"],
+        "cloud": ["AWS"],
+        "tools": ["Git", "Docker", "VS Code"]
+      },
+      "years_experience": "2 years"
+    },
+    "projects": [
+      {
+        "name": "Personal Assistant Bot",
+        "description": "An AI chatbot that answers questions about me",
+        "tech_stack": ["OpenAI API", "Python"],
+        "status": "In-progress",
+        "highlights": ["Natural conversation", "Multi-language support"]
+      }
+    ],
+    "interests": [
+      "AI/ML",
+      "Web and System Development"
+    ],
+    "contact_method": "Please reach out via LinkedIn or GitHub"
+  },
+  "zh_HK": {
+    "basic_info": {
+      "name": "Ken",
+      "role": "程式員 / 軟件工程師",
+      "location": "香港",
+      "languages": ["廣東話", "英文", "普通話"]
+    },
+    "professional": {
+      "current_focus": "開發AI應用程式",
+      "skills": {
+        "frontend": ["React"],
+        "backend": ["Python", "PHP", "FastAPI"],
+        "cloud": ["AWS"],
+        "tools": ["Git", "Docker", "VS Code"]
+      },
+      "years_experience": "2年以上經驗"
+    },
+    "projects": [
+      {
+        "name": "個人助理機械人",
+        "description": "一個可以幫我手回答一啲關於我背景或項目既機器人",
+        "tech_stack": ["OpenAI API", "Python"],
+        "status": "開發緊",
+        "highlights": ["自然對話", "多語言支援"]
+      }
+    ],
+    "interests": [
+      "人工智能/機器學習",
+      "網頁或系統開發"
+    ],
+    "contact_method": "請通過LinkedIn或GitHub聯繫"
+  }
+}

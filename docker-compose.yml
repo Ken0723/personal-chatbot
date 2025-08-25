@@ -1,0 +1,17 @@
+services:
+  api:
+    build: .
+    container_name: personal-bot-api
+    ports:
+      - "8086:8086"
+    env_file:
+      - .env
+    volumes:
+      - ./logs:/app/logs
+      - ./personal_data.json:/app/personal_data.json:ro
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8086/api/chat"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
