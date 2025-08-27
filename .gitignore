@@ -34,3 +34,6 @@ yarn-error.log*
 
 # passlib
 /passlib_hash_gen.py
+
+# google chatbot private key
+/credentials.json

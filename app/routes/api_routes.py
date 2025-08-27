@@ -3,15 +3,15 @@ import json
 import re
 
 from flask import Blueprint, request, jsonify, current_app
-from openai import OpenAI
 from dotenv import load_dotenv
-
-load_dotenv()
-
-api = Blueprint('api', __name__)
-
 from collections import defaultdict
 from datetime import datetime, timedelta
+from app.services.gemini_service import GeminiPortfolioService
+
+load_dotenv()
+chatbot_service = GeminiPortfolioService()
+
+api = Blueprint('api', __name__)
 
 class SimpleRateLimiter:
     def __init__(self):
@@ -105,9 +105,18 @@ def chat():
         user_message = request.json.get('message', '').strip()
         clean_message, error = sanitize_input(user_message)
 
-        
+        response = chatbot_service.generate_response(clean_message)
 
-        return {'success': True, 'message': 'Authenticated'}
+        return jsonify(response), 200 if response['success'] else 500
     except Exception as e:
         print(f"Error: {e}")
         return jsonify({'success': False, 'message': 'Internal server error', 'error': str(e)}), 500
+    
+@api.route('/health', methods=['GET'])
+def health():
+    """Health check endpoint"""
+    return jsonify({
+        'status': 'healthy',
+        'service': 'Gemini Portfolio Chatbot',
+        'region': 'asia-east2 (Hong Kong)'
+    })

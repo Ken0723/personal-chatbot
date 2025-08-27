@@ -24,14 +24,13 @@ def create_app(test_config=None):
             'Content-Type, Authorization')
         response.headers.add(
             'Access-Control-Allow-Methods',
-            'POST')
+            'GET, POST')
         return response
     
     # Blue print register
     app.register_blueprint(api, url_prefix='/api')
 
     return app
-
 
 APP = create_app()
 

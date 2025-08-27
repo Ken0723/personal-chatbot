@@ -20,7 +20,7 @@
       {
         "name": "Personal Assistant Bot",
         "description": "An AI chatbot that answers questions about me",
-        "tech_stack": ["OpenAI API", "Python"],
+        "tech_stack": ["Google Cloud", "Gemini", "Python"],
         "status": "In-progress",
         "highlights": ["Natural conversation", "Multi-language support"]
       }
@@ -52,7 +52,7 @@
       {
         "name": "個人助理機械人",
         "description": "一個可以幫我手回答一啲關於我背景或項目既機器人",
-        "tech_stack": ["OpenAI API", "Python"],
+        "tech_stack": ["Google Cloud", "Gemini", "Python"],
         "status": "開發緊",
         "highlights": ["自然對話", "多語言支援"]
       }
