@@ -90,8 +90,6 @@ STRICT RULES:
                 return {
                     'success': True,
                     'message': cached_response,
-                    'cached': True,
-                    'model': 'Gemini (cached)'
                 }
             
             # Prepare prompt    

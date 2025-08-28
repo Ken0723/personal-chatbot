@@ -7,29 +7,198 @@
       "languages": ["Cantonese", "English", "Mandarin"]
     },
     "professional": {
-      "current_focus": "Building AI-powered applications",
+      "current_focus": "Building AI-powered applications. At the same time, he also considering whether the bot is it possible to automatically reply to some messages on social platforms.",
       "skills": {
-        "frontend": ["React"],
-        "backend": ["Python", "PHP", "FastAPI"],
-        "cloud": ["AWS"],
-        "tools": ["Git", "Docker", "VS Code"]
+        "frontend": ["React", "HTML5", "CSS3", "JavaScript"],
+        "backend": ["Python", "PHP", "FastAPI", "Flask", "Java", "Symfony"],
+        "mobile": ["Flutter", "Android (Java)"],
+        "blockchain": ["Solidity", "Web3.js", "Ethereum"],
+        "cloud": ["AWS", "Google Cloud"],
+        "database": ["MySQL", "PostgreSQL", "SQLAlchemy"],
+        "tools": ["Git", "Docker", "VS Code", "NFC Integration"],
+        "systems": ["ERP Systems", "MES Systems", "Windows Administration"]
       },
-      "years_experience": "2 years"
+      "years_experience": "Around 2 years"
     },
+    "work_experience": [
+      {
+        "period": "Oct 2023 - Mar 2025",
+        "title": "Junior Software Engineer",
+        "company": "Data Digitalisation Limited",
+        "type": "Full-Time",
+        "description": "Worked at a startup specializing in cloud-based and on-premises MES (Manufacturing Execution System) solutions for manufacturing process management and monitoring",
+        "responsibilities": [
+          "Cloud-based and On-Premises MES system development",
+          "Manufacturing process optimization and monitoring", 
+          "Real-time production data management",
+          "Web application development using PHP Symfony framework",
+          "Database design and management for manufacturing systems",
+          "Integration of cloud services with production environments"
+        ],
+        "tech_stack": ["PHP", "Symfony", "Cloud Technologies", "MES Systems", "Database Management"]
+      },
+      {
+        "period": "Oct 2020 - Aug 2021",
+        "title": "Programmer",
+        "company": "UCP Group",
+        "type": "Full-Time",
+        "description": "Developed and maintained ERP systems, focusing on system integration and data management",
+        "responsibilities": [
+          "ERP system development and maintenance",
+          "Batch job monitoring and maintenance",
+          "Integration of external systems with internal ERP",
+          "Cross-system data exchange implementation",
+          "Third-party data translation process management",
+          "Database management and optimization",
+          "System documentation and technical support",
+          "Application performance monitoring and troubleshooting"
+        ],
+        "tech_stack": ["ERP Systems", "Database Management", "System Integration", "Batch Processing"]
+      },
+      {
+        "period": "Jul 2019 - Sep 2019",
+        "title": "Technical Support",
+        "company": "Smart Favor Company",
+        "type": "Summer Job",
+        "description": "Provided technical support for government departments, focusing on system upgrades and network configuration",
+        "responsibilities": [
+          "Windows system upgrades (Windows 7 to 10)",
+          "Hardware installation (SSD)",
+          "Network domain configuration",
+          "User and group management",
+          "Antivirus software deployment",
+          "Network device mapping via CMD",
+          "Basic system maintenance"
+        ],
+        "tech_stack": ["Windows Administration", "Network Configuration", "Hardware Installation", "CMD"]
+      }
+    ],
+    "education": [
+      {
+        "period": "Sep 2021 - Sep 2023",
+        "degree": "Bachelor of Computing with Honours in Computer Science",
+        "institution": "Hong Kong Metropolitan University",
+        "description": "Pursued formal education to deepen technical knowledge and broaden skill set with comprehensive theoretical foundations and practical experience",
+        "subjects": [
+          "Advanced Application Development & Software Engineering",
+          "Database Systems Design & Implementation", 
+          "IoT Security & Cybersecurity Fundamentals",
+          "Computer Networking & Distributed Systems",
+          "Human-Computer Interaction & UI/UX Design Principles",
+          "Data Structures & Algorithms",
+          "Cloud Computing Technologies"
+        ]
+      },
+      {
+        "period": "Sep 2018 - Aug 2020",
+        "degree": "Higher Diploma - Software Engineering",
+        "institution": "Hong Kong Institute of Vocational Education",
+        "description": "Established solid foundation in programming principles and software development methodologies with hands-on curriculum combining theory and practice",
+        "subjects": [
+          "Programming Fundamentals (Java, C#)",
+          "Web Development Technologies",
+          "Software Development Life Cycle",
+          "Database Management Systems",
+          "System Analysis & Design",
+          "Mobile Application Development",
+          "Software Testing & Quality Assurance"
+        ]
+      }
+    ],
     "projects": [
       {
         "name": "Personal Assistant Bot",
-        "description": "An AI chatbot that answers questions about me",
-        "tech_stack": ["Google Cloud", "Gemini", "Python"],
+        "description": "An AI chatbot that answers questions about me using natural language processing",
+        "tech_stack": ["Google Cloud", "Gemini", "Python", "Flask"],
         "status": "In-progress",
-        "highlights": ["Natural conversation", "Multi-language support"]
+        "highlights": ["Natural conversation", "Multi-language support", "Rate limiting", "Input sanitization"]
+      },
+      {
+        "name": "Attendance System",
+        "description": "Comprehensive attendance management system with card reader integration and web interface",
+        "tech_stack": ["React", "Flask", "JWT", "Auth0", "Docker", "RESTful API"],
+        "status": "Completed",
+        "highlights": ["Secure authentication", "Role-based access control", "API protection"]
+      },
+      {
+        "name": "Trivia API",
+        "description": "Interactive quiz application with question management and category-based filtering",
+        "tech_stack": ["React", "Flask", "SQLAlchemy", "RESTful API"],
+        "status": "Completed",
+        "highlights": ["Interactive quiz game", "CRUD operations", "Full-text search", "Randomized questions"]
+      },
+      {
+        "name": "6PM Discord Bot & Web Management System",
+        "description": "6PM is a Hong Kong volunteer organization that primarily provides support for socially withdrawn youth, and we are collaborating with them to develop a system for managing their Discord channels, including sentiment analysis and activity management",
+        "tech_stack": ["Python", "Discord API", "PHP", "MySQL", "NLP"],
+        "status": "Completed",
+        "highlights": ["Sentiment analysis", "Youth support platform", "Administrative dashboard", "Automated responses"]
+      },
+      {
+        "name": "School Information Mobile App",
+        "description": "Mobile application providing comprehensive school information through government APIs",
+        "tech_stack": ["Flutter", "Dart", "Google Maps API", "Government APIs"],
+        "status": "Completed",
+        "highlights": ["Cross-platform compatibility", "Multilingual support", "Maps integration", "Advanced search"]
+      },
+      {
+        "name": "Restaurant Booking System",
+        "description": "Complete restaurant management ecosystem with mobile apps and NFC check-in",
+        "tech_stack": ["Java Android", "PHP", "AWS", "MySQL", "NFC"],
+        "status": "Completed",
+        "highlights": ["Dual mobile apps", "NFC technology", "Real-time orders", "Cloud deployment"]
+      },
+      {
+        "name": "Auto Click Application",
+        "description": "Windows automation utility for automated clicking with hotkey support",
+        "tech_stack": [".NET Framework", "C#", "WPF", "Windows API"],
+        "status": "Completed",
+        "highlights": ["Coordinate recording", "Hotkey activation", "Background operation", "System integration"]
+      },
+      {
+        "name": "Fyyur",
+        "description": "Artist-venue connection platform for booking shows and events",
+        "tech_stack": ["Flask", "PostgreSQL", "SQLAlchemy", "WTForms"],
+        "status": "Completed",
+        "highlights": ["Artist profiles", "Venue management", "Show scheduling", "Location-based search"]
+      },
+      {
+        "name": "Blockchain Online Shopping",
+        "description": "Decentralized e-commerce platform with Ethereum payment integration",
+        "tech_stack": ["JavaScript", "Solidity", "Web3.js", "Ethereum", "Smart Contracts"],
+        "status": "Completed",
+        "highlights": ["Cryptocurrency payments", "Smart contracts", "Wallet integration", "Blockchain verification"]
+      },
+      {
+        "name": "PDF Viewer",
+        "description": "Web-based PDF reader with navigation controls",
+        "tech_stack": ["PHP", "HTML", "CSS", "JavaScript"],
+        "status": "Completed",
+        "highlights": ["Browser-based viewing", "Page navigation", "File handling", "Simple interface"]
+      },
+      {
+        "name": "Simple Reversi Game",
+        "description": "Console-based implementation of the classic Reversi board game",
+        "tech_stack": ["Java", "Console Application"],
+        "status": "Completed",
+        "highlights": ["Game logic implementation", "Turn-based gameplay", "Score tracking", "First programming project"]
+      },
+      {
+        "name": "Simple Website",
+        "description": "First web development project - a fan site for DJ Martin Garrix",
+        "tech_stack": ["HTML5", "CSS3"],
+        "status": "Completed",
+        "highlights": ["Responsive design", "Music showcase", "Photo gallery", "First web project"]
       }
     ],
     "interests": [
-      "AI/ML",
-      "Web and System Development"
+      "AI/ML and Natural Language Processing",
+      "Web and Mobile Development",
+      "Blockchain Technology",
+      "Cloud Computing",
+      "System Integration"
     ],
-    "contact_method": "Please reach out via LinkedIn or GitHub"
+    "contact_method": "Please reach out via LinkedIn or E-mail"
   },
   "zh_HK": {
     "basic_info": {
@@ -39,28 +208,197 @@
       "languages": ["廣東話", "英文", "普通話"]
     },
     "professional": {
-      "current_focus": "開發AI應用程式",
+      "current_focus": "開發AI應用程式，同一時間都考慮緊機械人做唔做到自動回覆社交平台上既訊息",
       "skills": {
-        "frontend": ["React"],
-        "backend": ["Python", "PHP", "FastAPI"],
-        "cloud": ["AWS"],
-        "tools": ["Git", "Docker", "VS Code"]
+        "frontend": ["React", "HTML5", "CSS3", "JavaScript"],
+        "backend": ["Python", "PHP", "FastAPI", "Flask", "Java", "Symfony"],
+        "mobile": ["Flutter", "Android (Java)"],
+        "blockchain": ["Solidity", "Web3.js", "Ethereum"],
+        "cloud": ["AWS", "Google Cloud"],
+        "database": ["MySQL", "PostgreSQL", "SQLAlchemy"],
+        "tools": ["Git", "Docker", "VS Code", "NFC整合"],
+        "systems": ["ERP系統", "MES系統", "Windows管理"]
       },
-      "years_experience": "2年以上經驗"
+      "years_experience": "約2年經驗"
     },
+    "work_experience": [
+      {
+        "period": "2023年10月 - 2025年3月",
+        "title": "初級軟件工程師",
+        "company": "Data Digitalisation Limited",
+        "type": "全職",
+        "description": "在一間專注於雲端同本地MES（製造執行系統）解決方案既初創公司工作，專門為製造業客戶提供生產流程管理同監控系統",
+        "responsibilities": [
+          "雲端同本地MES系統開發",
+          "製造流程優化同監控",
+          "實時生產數據管理",
+          "使用PHP Symfony框架開發網頁應用程式",
+          "製造系統既數據庫設計同管理",
+          "雲端服務同生產環境既整合"
+        ],
+        "tech_stack": ["PHP", "Symfony", "雲端技術", "MES系統", "數據庫管理"]
+      },
+      {
+        "period": "2020年10月 - 2021年8月",
+        "title": "程式員",
+        "company": "UCP Group",
+        "type": "全職",
+        "description": "開發同維護ERP系統，專注於系統整合同數據管理",
+        "responsibilities": [
+          "ERP系統開發同維護",
+          "批次作業監控同維護",
+          "外部系統同內部ERP既整合",
+          "跨系統數據交換實施",
+          "第三方數據轉換流程管理",
+          "數據庫管理同優化",
+          "系統文檔同技術支援",
+          "應用程式性能監控同故障排除"
+        ],
+        "tech_stack": ["ERP系統", "數據庫管理", "系統整合", "批次處理"]
+      },
+      {
+        "period": "2019年7月 - 2019年9月",
+        "title": "技術支援",
+        "company": "Smart Favor Company",
+        "type": "暑期工",
+        "description": "為政府部門提供技術支援，專注於系統升級同網絡配置",
+        "responsibilities": [
+          "Windows系統升級（Windows 7到10）",
+          "硬件安裝（SSD）",
+          "網絡域配置",
+          "用戶同群組管理",
+          "防毒軟件部署",
+          "透過CMD進行網絡設備映射",
+          "基本系統維護"
+        ],
+        "tech_stack": ["Windows管理", "網絡配置", "硬件安裝", "CMD"]
+      }
+    ],
+    "education": [
+      {
+        "period": "2021年9月 - 2023年9月",
+        "degree": "電腦學榮譽學士學位（電腦科學）",
+        "institution": "香港都會大學",
+        "description": "為了加深技術知識同擴闊技能而進修，獲得全面既理論基礎同實踐經驗",
+        "subjects": [
+          "高級應用程式開發同軟件工程",
+          "數據庫系統設計同實施",
+          "物聯網安全同網絡安全基礎",
+          "電腦網絡同分佈式系統",
+          "人機交互同UI/UX設計原則",
+          "數據結構同算法",
+          "雲端運算技術"
+        ]
+      },
+      {
+        "period": "2018年9月 - 2020年8月",
+        "degree": "高級文憑 - 軟件工程",
+        "institution": "香港專業教育學院",
+        "description": "建立程式設計原則同軟件開發方法論既堅實基礎，透過結合理論同實踐既實用課程",
+        "subjects": [
+          "程式設計基礎（Java、C#）",
+          "網頁開發技術",
+          "軟件開發生命週期",
+          "數據庫管理系統",
+          "系統分析同設計",
+          "流動應用程式開發",
+          "軟件測試同質量保證"
+        ]
+      }
+    ],
     "projects": [
       {
         "name": "個人助理機械人",
-        "description": "一個可以幫我手回答一啲關於我背景或項目既機器人",
-        "tech_stack": ["Google Cloud", "Gemini", "Python"],
+        "description": "一個可以用自然語言回答關於我背景同項目既AI聊天機械人",
+        "tech_stack": ["Google Cloud", "Gemini", "Python", "Flask"],
         "status": "開發緊",
-        "highlights": ["自然對話", "多語言支援"]
+        "highlights": ["自然對話", "多語言支援", "速率限制", "輸入清理"]
+      },
+      {
+        "name": "考勤系統",
+        "description": "全面既考勤管理系統，包括卡片閱讀器整合同網頁介面",
+        "tech_stack": ["React", "Flask", "JWT", "Auth0", "Docker", "RESTful API"],
+        "status": "已完成",
+        "highlights": ["安全認證", "角色權限控制", "API保護"]
+      },
+      {
+        "name": "問答遊戲API",
+        "description": "互動問答應用程式，有題目管理同分類過濾功能",
+        "tech_stack": ["React", "Flask", "SQLAlchemy", "RESTful API"],
+        "status": "已完成",
+        "highlights": ["互動遊戲", "CRUD操作", "全文搜尋", "隨機題目"]
+      },
+      {
+        "name": "6PM Discord機械人同網頁管理系統",
+        "description": "6PM是一個香港既義工團體主要為社交退縮青年提供支援，而我們跟他們合作開發一個系統用作管理他們的Discord頻道，包括情感分析同活動管理",
+        "tech_stack": ["Python", "Discord API", "PHP", "MySQL", "自然語言處理"],
+        "status": "已完成",
+        "highlights": ["情感分析", "青年支援平台", "管理儀表板", "自動回應"]
+      },
+      {
+        "name": "學校資訊手機應用程式",
+        "description": "透過政府API提供全面學校資訊既手機應用程式",
+        "tech_stack": ["Flutter", "Dart", "Google Maps API", "政府API"],
+        "status": "已完成",
+        "highlights": ["跨平台兼容", "多語言支援", "地圖整合", "進階搜尋"]
+      },
+      {
+        "name": "餐廳訂位系統",
+        "description": "完整既餐廳管理生態系統，包括手機應用程式同NFC登記",
+        "tech_stack": ["Java Android", "PHP", "AWS", "MySQL", "NFC"],
+        "status": "已完成",
+        "highlights": ["雙手機應用程式", "NFC技術", "實時訂單", "雲端部署"]
+      },
+      {
+        "name": "自動點擊應用程式",
+        "description": "Windows自動化工具，支援快捷鍵觸發自動點擊",
+        "tech_stack": [".NET Framework", "C#", "WPF", "Windows API"],
+        "status": "已完成",
+        "highlights": ["座標記錄", "快捷鍵激活", "背景運行", "系統整合"]
+      },
+      {
+        "name": "Fyyur",
+        "description": "藝術家同場地連接平台，用於預訂表演同活動",
+        "tech_stack": ["Flask", "PostgreSQL", "SQLAlchemy", "WTForms"],
+        "status": "已完成",
+        "highlights": ["藝術家檔案", "場地管理", "表演安排", "位置搜尋"]
+      },
+      {
+        "name": "區塊鏈網上購物",
+        "description": "去中心化電商平台，整合以太坊付款功能",
+        "tech_stack": ["JavaScript", "Solidity", "Web3.js", "Ethereum", "智能合約"],
+        "status": "已完成",
+        "highlights": ["加密貨幣付款", "智能合約", "錢包整合", "區塊鏈驗證"]
+      },
+      {
+        "name": "PDF閱讀器",
+        "description": "網頁版PDF閱讀器，有導航控制功能",
+        "tech_stack": ["PHP", "HTML", "CSS", "JavaScript"],
+        "status": "已完成",
+        "highlights": ["瀏覽器閱讀", "頁面導航", "檔案處理", "簡潔介面"]
+      },
+      {
+        "name": "簡單黑白棋遊戲",
+        "description": "命令行版本既經典黑白棋遊戲",
+        "tech_stack": ["Java", "控制台應用程式"],
+        "status": "已完成",
+        "highlights": ["遊戲邏輯實現", "回合制遊戲", "分數追蹤", "第一個程式項目"]
+      },
+      {
+        "name": "簡單網站",
+        "description": "第一個網頁開發項目 - DJ Martin Garrix既粉絲網站",
+        "tech_stack": ["HTML5", "CSS3"],
+        "status": "已完成",
+        "highlights": ["響應式設計", "音樂展示", "相片畫廊", "第一個網頁項目"]
       }
     ],
     "interests": [
-      "人工智能/機器學習",
-      "網頁或系統開發"
+      "人工智能/機器學習同自然語言處理",
+      "網頁同手機應用程式開發",
+      "區塊鏈技術",
+      "雲端運算",
+      "系統整合"
     ],
-    "contact_method": "請通過LinkedIn或GitHub聯繫"
+    "contact_method": "請通過LinkedIn或E-mail聯繫"
   }
 }
