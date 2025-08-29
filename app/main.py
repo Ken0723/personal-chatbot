@@ -14,7 +14,7 @@ def create_app(test_config=None):
     # Create and configure the app
     app = Flask(__name__)
 
-    CORS(app, resources={r"/*": {"origins": "*"}})
+    CORS(app, resources={r"/*": {"origins": ["https://ken-yeung.me", "http://localhost:3000"]}})
 
     # Allowed request's method config
     @app.after_request
