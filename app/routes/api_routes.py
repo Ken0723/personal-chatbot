@@ -117,6 +117,4 @@ def health():
     """Health check endpoint"""
     return jsonify({
         'status': 'healthy',
-        'service': 'Gemini Portfolio Chatbot',
-        'region': 'asia-east2 (Hong Kong)'
     })
