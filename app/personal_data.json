@@ -7,7 +7,7 @@
       "languages": ["Cantonese", "English", "Mandarin"]
     },
     "professional": {
-      "current_focus": "Building AI-powered applications. At the same time, he also considering whether the bot is it possible to automatically reply to some messages on social platforms.",
+      "current_focus": "Building AI-powered applications.",
       "skills": {
         "frontend": ["React", "HTML5", "CSS3", "JavaScript"],
         "backend": ["Python", "PHP", "FastAPI", "Flask", "Java", "Symfony"],
@@ -109,8 +109,8 @@
       {
         "name": "Personal Assistant Bot",
         "description": "An AI chatbot that answers questions about me using natural language processing",
-        "tech_stack": ["Google Cloud", "Gemini", "Python", "Flask"],
-        "status": "In-progress",
+        "tech_stack": ["Google Cloud", "Gemini", "Python", "Flask", "AWS EC2"],
+        "status": "Completed",
         "highlights": ["Natural conversation", "Multi-language support", "Rate limiting", "Input sanitization"]
       },
       {
@@ -208,7 +208,7 @@
       "languages": ["廣東話", "英文", "普通話"]
     },
     "professional": {
-      "current_focus": "開發AI應用程式，同一時間都考慮緊機械人做唔做到自動回覆社交平台上既訊息",
+      "current_focus": "開發AI應用程式",
       "skills": {
         "frontend": ["React", "HTML5", "CSS3", "JavaScript"],
         "backend": ["Python", "PHP", "FastAPI", "Flask", "Java", "Symfony"],
@@ -310,8 +310,8 @@
       {
         "name": "個人助理機械人",
         "description": "一個可以用自然語言回答關於我背景同項目既AI聊天機械人",
-        "tech_stack": ["Google Cloud", "Gemini", "Python", "Flask"],
-        "status": "開發緊",
+        "tech_stack": ["Google Cloud", "Gemini", "Python", "Flask", "AWS EC2"],
+        "status": "已完成",
         "highlights": ["自然對話", "多語言支援", "速率限制", "輸入清理"]
       },
       {
