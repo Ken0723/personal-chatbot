@@ -132,7 +132,6 @@ Response:"""
                 return {
                     'success': True,
                     'message': response_text,
-                    'model': 'Gemini 1.5 Flash',
                     'cached': False
                 }
             else:
