@@ -116,5 +116,6 @@ def chat():
 def health():
     """Health check endpoint"""
     return jsonify({
+        'success': True,
         'status': 'healthy',
     })
