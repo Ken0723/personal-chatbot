@@ -1,7 +1,7 @@
 #!/bin/bash
 
 APP_DIR="/home/ec2-user/flask-chatbot/personal-chatbot"
-SERVICE_FILE="flaskapp.service"
+SERVICE_FILE="/scripts/flaskapp.service"
 
 echo "Stopping existing Flask service..."
 systemctl stop flaskapp || true
