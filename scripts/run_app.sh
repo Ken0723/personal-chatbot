@@ -21,4 +21,4 @@ echo "$CREDENTIALS_JSON" > "$CREDENTIALS_FILE"
 export GOOGLE_APPLICATION_CREDENTIALS="$CREDENTIALS_FILE"
 
 echo "Starting Gunicorn..."
-exec $GUNICORN_EXECUTABLE -b 0.0.0.1:8086 app.main:APP --workers=1 --threads=2 --timeout=120
+exec $GUNICORN_EXECUTABLE -b 0.0.0.0:8086 app.main:APP --workers=1 --threads=2 --timeout=120
