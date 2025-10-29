@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
 set -e
 
 APP_DIR="/home/ec2-user/flask-chatbot/personal-chatbot"

@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
 set -x
 sudo systemctl stop flaskapp || true
 sudo systemctl disable flaskapp || true
