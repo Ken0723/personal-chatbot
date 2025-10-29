@@ -13,6 +13,7 @@ fi
 
 source venv_app/bin/activate 
 
+pip install --upgrade pip
 pip install -r requirements.txt
 
 deactivate

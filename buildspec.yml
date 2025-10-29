@@ -3,17 +3,6 @@ phases:
   install:
     runtime-versions:
       python: 3.12
-    commands:
-      - pip install --upgrade pip
-  pre_build:
-    commands:
-      - pip install -r requirements.txt
-  build:
-    commands:
-      - echo "Starting build phase..."
-  post_build:
-    commands:
-      - echo "Build completed successfully. Preparing artifacts."
 artifacts:
   files:
     - '**/*'
