@@ -1,23 +1,23 @@
 #!/bin/bash
+set -e
 
 APP_DIR="/home/ec2-user/flask-chatbot/personal-chatbot"
-SERVICE_FILE="/scripts/flaskapp.service"
-
-echo "Stopping existing Flask service..."
-systemctl stop flaskapp || true
+SERVICE_FILE="flaskapp.service"
 
 echo "Copying new Systemd service file..."
-cp "$APP_DIR/$SERVICE_FILE" /etc/systemd/system/$SERVICE_FILE
+sudo cp "$APP_DIR/$SERVICE_FILE" /etc/systemd/system/$SERVICE_FILE
 
 echo "Setting permissions..."
-chown -R ec2-user:ec2-user "$APP_DIR"
+sudo chown -R ec2-user:ec2-user "$APP_DIR"
+
+sudo chmod +x "$APP_DIR/scripts/run_app.sh" 
 
 echo "Reloading systemd daemon..."
-systemctl daemon-reload
+sudo systemctl daemon-reload
 
 echo "Enabling and starting Flask service..."
-systemctl enable flaskapp
-systemctl start flaskapp
+sudo systemctl enable flaskapp
+sudo systemctl start flaskapp
 
 echo "Status check..."
-systemctl status flaskapp
+sudo systemctl status flaskapp

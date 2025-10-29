@@ -6,7 +6,7 @@ After=network.target
 User=ec2-user
 Group=ec2-user
 WorkingDirectory=/home/ec2-user/flask-chatbot/personal-chatbot
-ExecStart=/usr/local/bin/gunicorn -b 0.0.0.0:8086 app.main:APP --workers=1 --threads=2 --timeout=120
+ExecStart=/home/ec2-user/flask-chatbot/personal-chatbot/scripts/run_app.sh
 Restart=always
 
 [Install]
