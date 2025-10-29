@@ -2,6 +2,7 @@
 set -e
 
 sudo systemctl stop flaskapp || true
+sudo systemctl disable flaskapp || true
 
 PID=$(sudo lsof -t -i:8086)
 
