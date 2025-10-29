@@ -1,5 +1,5 @@
 [Unit]
-Description=Gunicorn instance for Flask App
+Description=Chatbot API Server
 After=network.target
 
 [Service]
