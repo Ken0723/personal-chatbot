@@ -14,5 +14,5 @@ sudo systemctl daemon-reload
 
 echo "Enabling and starting Flask Gunicorn service..."
 sudo systemctl enable flaskapp
-sudo systemctl restart flaskapp
-sudo systemctl reload nginx
+sudo systemctl stop flaskapp || true 
+sudo systemctl start flaskapp
