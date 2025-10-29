@@ -3,6 +3,7 @@ os: linux
 files:
   - source: /
     destination: /home/ec2-user/flask-chatbot/personal-chatbot
+    overwrite: yes
 hooks:
   ApplicationStart:
     - location: scripts/start_server.sh
