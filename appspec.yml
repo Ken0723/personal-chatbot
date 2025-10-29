@@ -13,6 +13,7 @@ hooks:
     - location: scripts/clean_install_dir.sh
       timeout: 60
       runas: root
+  AfterInstall:
     - location: scripts/install_dependencies.sh
       timeout: 300
       runas: root
