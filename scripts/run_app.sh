@@ -15,7 +15,7 @@ export GCP_PROJECT_ID=$(aws ssm get-parameter --name "/GCP_PROJECT_ID" --query "
 export GEMINI_MODEL=$(aws ssm get-parameter --name "/GEMINI_MODEL" --query "Parameter.Value" --output text)
 
 CREDENTIALS_JSON=$(aws secretsmanager get-secret-value \
-    --secret-id "/GOOGLE_APPLICATION_CREDENTIALS" \
+    --secret-id "/GoogleCredentials" \
     --query "SecretString" \
     --output text)
 
