@@ -5,10 +5,10 @@ files:
     destination: /home/ec2-user/flask-chatbot/personal-chatbot
     overwrite: yes
 hooks:
-  ApplicationStop:
-    - location: scripts/stop_server.sh
-      timeout: 60
-      runas: root
+  # ApplicationStop:
+  #   - location: scripts/stop_server.sh
+  #     timeout: 60
+  #     runas: root
   BeforeInstall:
     - location: scripts/clean_install_dir.sh
       timeout: 60
