@@ -1,15 +1,14 @@
 #!/bin/bash
 set -ex
 
-rm -f /home/ec2-user/flask-chatbot/personal-chatbot/scripts/stop_server.sh || true 
-/usr/bin/systemctl stop flaskapp 2>/dev/null || true
-/usr/bin/systemctl disable flaskapp 2>/dev/null || true
+systemctl stop flaskapp  || true
+systemctl disable flaskapp || true
 
-PID=$(/usr/sbin/lsof -t -i:8086 2>/dev/null)
+PID=$(lsof  -t -i:8086 2>/dev/null)
 
 if [ -n "$PID" ]; then
     echo "Found rogue process on port 8086 (PID: $PID). Killing process..."
-    /usr/bin/kill -9 $PID 2>/dev/null || true
+    kill -9 $PID 2 || true
     sleep 2
     echo "Process killed."
 else
