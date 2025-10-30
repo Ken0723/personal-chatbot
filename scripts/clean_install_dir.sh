@@ -1,15 +1,7 @@
 #!/bin/bash
 set -ex
 
-TARGET_DIR="/home/ec2-user/flask-chatbot/personal-chatbot"
-
-if [ -d "$TARGET_DIR" ]; then
-    sudo rm -rf "$TARGET_DIR"/*
-    sudo rm -rf "$TARGET_DIR"/.* 
-else
-    sudo mkdir -p "$TARGET_DIR"
-fi
-
+rm -f /home/ec2-user/flask-chatbot/personal-chatbot/scripts/stop_server.sh || true 
 /usr/bin/systemctl stop flaskapp 2>/dev/null || true
 /usr/bin/systemctl disable flaskapp 2>/dev/null || true
 
@@ -22,6 +14,14 @@ if [ -n "$PID" ]; then
     echo "Process killed."
 else
     echo "No rogue processes found on port 8086."
+fi
+
+TARGET_DIR="/home/ec2-user/flask-chatbot/personal-chatbot"
+
+if [ -d "$TARGET_DIR" ]; then
+    sudo rm -rf "$TARGET_DIR"/*
+else
+    sudo mkdir -p "$TARGET_DIR"
 fi
 
 exit 0
