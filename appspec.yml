@@ -7,7 +7,7 @@ files:
 hooks:
   ApplicationStop:
     - location: scripts/stop_server.sh
-      timeout: 30
+      timeout: 60
       runas: root
   BeforeInstall:
     - location: scripts/clean_install_dir.sh
