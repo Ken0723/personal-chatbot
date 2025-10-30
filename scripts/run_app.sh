@@ -14,14 +14,17 @@ export GCP_LOCATION=$(aws ssm get-parameter --name "/GCP_LOCATION" --query "Para
 export GCP_PROJECT_ID=$(aws ssm get-parameter --name "/GCP_PROJECT_ID" --query "Parameter.Value" --output text)
 export GEMINI_MODEL=$(aws ssm get-parameter --name "/GEMINI_MODEL" --query "Parameter.Value" --output text)
 
-CREDENTIALS_JSON=$(aws secretsmanager get-secret-value \
+SECRET_RESPONSE=$(aws secretsmanager get-secret-value \
     --secret-id "GoogleCredentials" \
-    --query "SecretString" \
-    --output text)
+    --output json)
 
+CREDENTIALS_JSON=$(echo "$SECRET_RESPONSE" | jq -r '.SecretString')
 CREDENTIALS_FILE="$APP_DIR/credentials.json"
 
-echo "$CREDENTIALS_JSON" > "$CREDENTIALS_FILE"
+cat <<EOF > "$CREDENTIALS_FILE"
+$CREDENTIALS_JSON
+EOF
+
 chmod 600 "$CREDENTIALS_FILE"
 
 export GOOGLE_APPLICATION_CREDENTIALS="$CREDENTIALS_FILE"
