@@ -4,6 +4,8 @@ set -ex
 
 APP_DIR="/home/ec2-user/flask-chatbot/personal-chatbot"
 
+chmod +x /home/ec2-user/flask-chatbot/personal-chatbot/scripts/*.sh
+
 sudo yum update -y
 sudo yum install python3 python3-pip jq -y 
 
