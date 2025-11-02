@@ -119,3 +119,11 @@ def health():
         'success': True,
         'status': 'healthy',
     })
+
+@api.route('/ci-cd-demo', methods=['GET'])
+def ci_cd_demo():
+    """CI/CD demo endpoint"""
+    return jsonify({
+        'success': True,
+        'message': 'This is a demo api endpoint',
+    })
