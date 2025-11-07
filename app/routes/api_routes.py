@@ -120,10 +120,3 @@ def health():
         'status': 'healthy',
     })
 
-@api.route('/ci-cd-demo', methods=['GET'])
-def ci_cd_demo():
-    """CI/CD check endpoint"""
-    return jsonify({
-        'success': True,
-        'message': 'automation deploy success',
-    })
