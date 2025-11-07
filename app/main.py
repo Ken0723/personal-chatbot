@@ -18,7 +18,8 @@ def create_app(test_config=None):
         "https://ken-yeung.me", 
         "https://www.ken-yeung.me",
         "https://d21wvtfffwoqmo.cloudfront.net",
-        "http://localhost:3000"
+        "http://localhost:3000",
+        "http://localhost"
     ]}})
 
     # Allowed request's method config
